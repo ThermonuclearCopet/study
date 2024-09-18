@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First lab v2</title>
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Playfair Display font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Mulish font -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Support libs -->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <!-- My styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <img src="image/nav_icon.svg" alt="logo" class="header__image">
+            <nav class="header__nav">
+                <ul>
+                    <li class="header__nav-item-black"><a href="">Home</a></li>
+                    <li class="header__nav-item"><a href="">Destinations</a></li>
+                    <li class="header__nav-item"><a href="">About</a></li>
+                    <li class="header__nav-item"><a href="">Partner</a></li>
+                    <li class="header__nav-item"><button class="header__login">Login</button></li>
+                    <li class="header__nav-item"><button class="header__register">Register</button></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="container hero__container">
+            <div class="hero__inner">
+                <h1 class="hero__heading">Explore and Travel</h1>
+                <h2 class="hero__sub-title">Holiday finder</h2>
+                <hr>
+                <div class="form-container">
+                    <div class="form-group">
+                        <select id="location">
+                            <option>Location</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="activity">
+                            <option>Activity</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="grade">
+                            <option>Grade</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="date">
+                            <option>Date</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="hero__button">Explore</button>
+            </div>
+        </div>
+    </header>
+    <div class="container"> 
+        <!--main-->
+    <section class="details">
+        <img src="/image/first-section-image.svg" alt="thousand-02" class="details__image">
+        <div class="details__inner">
+            <h2 class="details__title">A new way to explore the world</h2>
+            <p>For decades travellers have reached for Lonely Planet books when looking to plan and execute their
+                perfect
+                trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+            <button class="details__button">Learn more</button>
+        </div>
+    </section>
+    <section class="destination">
+        <div class="container">
+            <div class="destination__header">
+                <h2>Featured destinations</h2>
+                <div>
+                    <a href="">View all</a>
+                    <img src="/image/view-all-arrow.svg" alt="">
+                </div>
+
+            </div>
+            <div class="destination__inner">
+                <div class="destination__image1">
+                    <div class="destination__image">
+                    <h3>Raja Ampat</h3>
+                    <p>Indonesia</p>
+                    </div>
+                </div>
+                <div class="destination__image2">
+                    <div class="destination__image">
+                    <h3>Fanjingshan</h3>
+                    <p>China</p>
+                    </div>
+                </div>
+                <div class="destination__image3">
+                    <div class="destination__image">
+                    <h3>Vevey</h3>
+                    <p>Switzerland</p>
+                    </div>
+                </div>
+                <div class="destination__image4">
+                    <div class="destination__image">
+                    <h3>Skadar</h3>
+                    <p>Montenegro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer__branding">
+            <img src="/image/nav_icon.svg">
+            <p>©2020 Thousand Sunny. All rights reserved</p>
+          </div>
+          <hr class="footer__hr">
+          <div class="footer__navigation">
+            <div class="footer__social">
+                <div class="footer__social__link">
+                    <img src="image/social-tw.svg" alt="tw social icon">
+                  </div>
+                  <div class="footer__social__link">
+                    <img src="image/social-fb.svg" alt="fb social icon">
+                  </div>
+                  <div class="footer__social__link">
+                    <img src="image/social-inst.svg" alt="inst social icon">
+                  </div>
+                  <div class="footer__social__link">
+                    <img src="image/social-in.svg" alt="in social icon">
+                  </div>
+                  <div class="footer__social__link">
+                    <img src="image/social-yt.svg" alt="yt social icon">
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+</body>
+
+</html>

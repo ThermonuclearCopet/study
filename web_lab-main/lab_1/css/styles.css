@@ -1,0 +1,35 @@
+@import "/css/header.css";
+@import "/css/hero.css";
+@import "/css/destination.css";
+@import "/css/details.css";
+@import "/css/footer.css";
+
+
+body {
+  background: #fff;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 17px;
+  color: #7D7987;
+}
+
+a {
+  text-decoration: none;
+  color: #202336;
+}
+
+button {
+ border: none;
+}
+
+hr {
+  width: 32px;
+  size: 2px;
+  margin-top: 25px;
+  margin-left: 0;
+  color: #202336;
+}
+
+.container {
+  max-width: 1415px;
+  margin: 0 auto;
+}

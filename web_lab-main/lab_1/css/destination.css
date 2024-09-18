@@ -1,0 +1,99 @@
+.destination {
+    padding: 110px 0;
+    margin-top: 100px;
+  }
+  
+  .destination > .container {
+    display: block;
+    align-items: center;
+    max-width: 1239px;
+    margin-left: 120px;
+    margin-right: 240px;
+  }
+  
+  .destination__header {
+    margin-top: 20px;
+  
+    display: flex;
+    justify-content: space-between;
+    padding-left: 120px;
+    margin-bottom: 50px;
+  }
+  
+  .destination__header a {
+    color:#FB8F1D;
+    font-weight: 600;
+    line-height: 60px;
+  }
+  
+  .destination__header h2 {
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-weight: 700;
+    color:black;
+  }
+  
+  .destination__inner {
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .destination__image1 {
+    margin-left: 20px;
+    border-radius: 10px;
+    position: relative;
+    background: url(../image/second-section-image1.svg) no-repeat;
+    width:261px;
+    height: 332px;
+  }
+  
+  .destination__image2 {
+    margin-left: 20px;
+    border-radius: 10px;
+    position: relative;
+    background: url(../image/second-section-image2.svg) no-repeat;
+    width:261px;
+    height: 332px;
+  }
+  
+  .destination__image3 {
+    margin-left: 20px;
+    border-radius: 10px;
+    position: relative;
+    background: url(../image/second-section-image3.svg) no-repeat;
+    width:261px;
+    height: 332px;
+  }
+  
+  .destination__image4 {
+    margin-left: 20px;
+    border-radius: 10px;
+    position: relative;
+    background: url(../image/second-section-image4.svg) no-repeat;
+    width:261px;
+    height: 332px;
+  }
+  .destination__image{
+    width:120px;
+    height:56px;
+    background: url(../image/image-descript.svg) no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+  }
+  .destination__image h3 {
+   margin-top: 10px;
+   color: #042521;
+   line-height: 25px;
+   font-weight: 600;
+  }
+  
+  .destination__image p {
+    color: #80918E;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 15px;
+   }
+  
