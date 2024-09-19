@@ -43,7 +43,7 @@ int main() {
     float det = gauss_determinant(matrix, 4);
 
     if (det != 0) {
-        cout << "Determinant: " << det << endl;
+        cout << "\n\nDeterminant: " << det <<"\n\n" << endl;
     }
 
     return 0;

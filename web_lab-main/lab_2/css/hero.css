@@ -1,0 +1,74 @@
+.hero__container {
+    margin-top: 120px;
+    background: url(../image/header-image.svg) no-repeat right top;
+    height: 750px;
+  }
+  
+  .hero__heading {
+    margin-top: 20px;
+    width: 356px;
+    font-family: "Playfair Display";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #202336;
+  }
+  
+  .hero__inner {
+    margin-left: 100px;
+    width: 500px;
+  }
+  
+  .hero__sub-title {
+    color: #202336;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 60px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  
+  .form-group label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    display: block;
+  }
+  
+  .form-group select {
+    width: 220px;
+    height: 52px;
+    color: #4A4C53;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0px 30px;
+    border-radius: 10px;
+    border: 0;
+    outline: 1px solid;
+    outline-color: #AFB0B9;
+    border-right: 20px solid transparent;
+    appearance: none;
+    background-image: url("../image/select-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+  }
+  
+  .hero__button{
+    width: 180px;
+    height: 45px;
+    background: #FB8F1D;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 30px;
+  }

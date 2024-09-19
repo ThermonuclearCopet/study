@@ -1,0 +1,41 @@
+.footer {
+    background: #F8F8F8;
+    padding: 30px 245px 32px 200px;
+  }
+  
+  .footer__navigation {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  .footer__branding{
+    font-weight: 300;
+    color: #848484;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer__hr {
+    background: #cdd1d4;
+    align-items: center;
+    height: 1px;
+    width: 1219px;
+    border: 0;
+  }
+  
+  .footer__social {
+    display: flex;
+    align-items: last baseline;
+  }
+  
+  .footer__social__link {
+    width: 22px;
+    height: 22px;
+    margin-left: 35px;
+    margin-top: 30px;
+  
+  }
+  
