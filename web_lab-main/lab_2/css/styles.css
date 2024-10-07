@@ -3,7 +3,16 @@
 @import "/css/destination.css";
 @import "/css/details.css";
 @import "/css/footer.css";
+@import "/css/animations.css";
 
+:root {
+  --color-dark: #111b47;
+  --color-font-dark: #091133;
+
+  --font-size-md: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-xs: 0.75rem;
+}
 
 body {
   background: #fff;
@@ -32,4 +41,23 @@ hr {
 .container {
   max-width: 1415px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :root {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
 }

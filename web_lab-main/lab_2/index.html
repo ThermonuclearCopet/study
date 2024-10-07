@@ -33,8 +33,11 @@
 
     <header class="header">
         <div class="container header__container">
+            <div class="header__menu" onclick="toggleMenu()">
+                <img src="image/menu.svg" alt="Menu icon">
+            </div>
             <img src="image/nav_icon.svg" alt="logo" class="header__image">
-            <nav class="header__nav">
+            <nav id="nav-links" class="header__nav">
                 <ul>
                     <li class="header__nav-item-black"><a href="">Home</a></li>
                     <li class="header__nav-item"><a href="">Destinations</a></li>
@@ -45,8 +48,8 @@
                 </ul>
             </nav>
         </div>
-
-
+    </header>
+    <div>
         <div class="container hero__container">
             <div class="hero__inner">
                 <h1 class="hero__heading">Explore and Travel</h1>
@@ -77,21 +80,27 @@
                 <button class="hero__button">Explore</button>
             </div>
         </div>
-    </header>
-    <main class="container">
-        <!--main-->
-        <section class="details">
-            <img src="/image/first-section-image.svg" alt="thousand-02" class="details__image">
-            <div class="details__inner">
-                <h2 class="details__title">A new way to explore the world</h2>
-                <p>For decades travellers have reached for Lonely Planet books when looking to plan and execute their
-                    perfect
-                    trip, but now, they can also let Lonely Planet Experiences lead the way</p>
-                <button class="details__button">Learn more</button>
+    </div>
+
+
+    <main>
+        <section class="details__container">
+            <div class="details">
+                <img src="/image/first-section-image.svg" alt="thousand-02" class="details__image">
+                <div class="details__inner">
+                    <h2 class="details__title">A new way to explore the world</h2>
+                    <p>For decades travellers have reached for Lonely Planet books when looking to plan and execute
+                        their
+                        perfect
+                        trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+                    <button class="details__button">Learn more</button>
+                </div>
+                
             </div>
         </section>
-        <section class="destination">
-            <div class="container">
+        <section class="container destinations__container">
+            <div class="destination">
+
                 <div class="destination__header">
                     <h2>Featured destinations</h2>
                     <div>
@@ -130,6 +139,8 @@
         </section>
     </main>
 
+
+
     <footer class="footer">
         <div class="container">
             <div class="footer__branding">
@@ -158,7 +169,7 @@
             </div>
     </footer>
 
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>

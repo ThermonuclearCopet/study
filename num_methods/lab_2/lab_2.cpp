@@ -25,7 +25,7 @@ float calculate_point(float x){
 
 float find_root(float _a, float _b, float _e){
     float x0 = (_a+_b)/2.0f;
-    if (fabs(_b-_a) < 2*_e || fabs(calculate_point(x0)) < e)
+    if (fabs(_b-_a) < 2*_e || fabs(calculate_point(x0)) < _e)
     {
         return x0;
     }
