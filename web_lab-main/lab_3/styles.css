@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+}
+
+.left-panel {
+    width: 30%;
+    background-color: #c8e6c9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.left-panel h2, .left-panel h3 {
+    color: #388e3c;
+}
+
+.left-panel input, .left-panel button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a5d6a7;
+
+}
+
+.left-panel button {
+    background-color: #66bb6a;
+    color: white;
+    cursor: pointer;
+}
+
+.left-panel button:hover {
+    background-color: #43a047;
+}
+
+.right-panel {
+    width: 70%;
+    padding: 20px;
+    background-color: #f1f8e9;
+    border-radius: 8px;
+}
+
+.right-panel h2 {
+    color: #388e3c;
+}
+
+#showroom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#showroom > div {
+    width: 150px;
+    background-color: #81c784;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+#showroom button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#showroom button:hover {
+    background-color: #d32f2f;
+}
+
+.sort_option{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    width: 27%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

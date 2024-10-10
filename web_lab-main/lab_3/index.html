@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insect Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Add New Insect</h2>
+            <input id="name-input" type="text" placeholder="Name">
+            <input id="velocity-input" type="text" placeholder="Velocity">
+            <input id="weight-input" type="text" placeholder="Weight">
+            <button onclick="addInsect()">Add Insect</button>
+            
+            <h3>Search</h3>
+            <input id="search-input" type="text" placeholder="Search insects...">
+            <button onclick="searchCard()">Search</button>
+            
+            <h3>Controls</h3>
+            <div>
+                <label class="sort_option">
+                    <input id="vel-sort-checkbox" type="checkbox" onchange="sortCheckbox(this)">
+                    <p>Sort by velocity</p>
+                </label>
+            </div>
+            <button onclick="alertAverageVelocity()">Average Velocity</button>
+            <button onclick="clearSearch()">Clear Search</button>
+        </div>
+        <div class="right-panel">
+            <h2>Insect Showroom</h2>
+            <div id="showroom"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
