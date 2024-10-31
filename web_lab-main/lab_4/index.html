@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <button id="openModal">Add New Plane</button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Add New Plane</h2>
+                    <form id="planeForm">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="fuelCapacity">Fuel Capacity</label>
+                        <input type="number" id="fuelCapacity" name="fuelCapacity" required>
+
+                        <label for="passangers">Passangers</label>
+                        <input type="number" id="passangers" name="passangers" required>
+
+                        <button type="submit">Add Plane</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="editModal" class="modal">
+                <div class="modal-content">
+                    <span class="closeEdit">&times;</span>
+                    <h2>Edit Plane</h2>
+                    <form id="editPlaneForm">
+                        <input type="hidden" id="editIndex">
+                        <label for="editName">Name</label>
+                        <input type="text" id="editName" name="editName" required>
+
+                        <label for="editFuelCapacity">Fuel Capacity</label>
+                        <input type="number" id="editFuelCapacity" name="editFuelCapacity" required>
+
+                        <label for="editPassangers">passangers</label>
+                        <input type="number" id="editPassangers" name="editPassangers" required>
+
+                        <button type="submit">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="cardsContainer"></div>
+
+            <h3>Search</h3>
+            <input id="search-input" type="text" placeholder="Search plane...">
+            <button onclick="searchCard()">Search</button>
+
+            <h3>Controls</h3>
+            <div>
+                <label class="sort_option">
+                    <input id="vel-sort-checkbox" type="checkbox" onchange="sortCheckbox(this)">
+                    <p>Sort by fuel capacity</p>
+                </label>
+            </div>
+            <button onclick="alertAverageCapacity()">Average capacity</button>
+            <button onclick="clearSearch()">Clear Search</button>
+        </div>
+
+        <div class="right-panel">
+            <h2>Plane info</h2>
+            <div id="showroom"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

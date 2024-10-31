@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insect Showroom</title>
+    <title>plane Showroom</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="left-panel">
-            <h2>Add New Insect</h2>
+            <h2>Add New plane</h2>
             <input id="name-input" type="text" placeholder="Name">
-            <input id="velocity-input" type="text" placeholder="Velocity">
-            <input id="weight-input" type="text" placeholder="Weight">
-            <button onclick="addInsect()">Add Insect</button>
+            <input id="fuel_capacity-input" type="text" placeholder="Fuel_capacity">
+            <input id="passengers-input" type="text" placeholder="passengers">
+            <button onclick="addPlane()">Add plane</button>
             
             <h3>Search</h3>
-            <input id="search-input" type="text" placeholder="Search insects...">
+            <input id="search-input" type="text" placeholder="Search plane...">
             <button onclick="searchCard()">Search</button>
             
             <h3>Controls</h3>
             <div>
                 <label class="sort_option">
                     <input id="vel-sort-checkbox" type="checkbox" onchange="sortCheckbox(this)">
-                    <p>Sort by velocity</p>
+                    <p>Sort by fuel capacity</p>
                 </label>
             </div>
-            <button onclick="alertAverageVelocity()">Average Velocity</button>
+            <button onclick="alertAverageCapasity()">Average capacity</button>
             <button onclick="clearSearch()">Clear Search</button>
         </div>
         <div class="right-panel">
-            <h2>Insect Showroom</h2>
+            <h2>Plane info</h2>
             <div id="showroom"></div>
         </div>
     </div>

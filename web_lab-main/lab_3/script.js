@@ -1,8 +1,8 @@
-class Insect {
-    constructor(name, velocity, weight) {
+class Plane {
+    constructor(name, Fuel_capacity, passengers) {
         this.name = name;
-        this.velocity = velocity;
-        this.weight = weight;
+        this.Fuel_capacity = Fuel_capacity;
+        this.passengers = passengers;
     }
 }
 
@@ -10,18 +10,18 @@ const showroomList = [];
 let currentList = [];
 
 const data = [
-    { "name": "Housefly", "velocity": 5.0, "weight": 0.01 },
-    { "name": "Dragonfly", "velocity": 60.0, "weight": 0.02 },
-    { "name": "Butterfly", "velocity": 12.0, "weight": 0.3 },
-    { "name": "Ant", "velocity": 0.3, "weight": 0.0005 },
-    { "name": "Beetle", "velocity": 0.1, "weight": 0.5 },
-    { "name": "Mosquito", "velocity": 1.5, "weight": 0.002 },
-    { "name": "Locust", "velocity": 20.0, "weight": 0.05 },
-    { "name": "Termite", "velocity": 0.2, "weight": 0.003 },
-    { "name": "Termite", "velocity": 0.2, "weight": 0.003 }
+    { "name": "f16", "Fuel_capacity": 2000.0, "passengers": 1.0 },
+    { "name": "f15", "Fuel_capacity": 3000.0, "passengers": 2.0 },
+    { "name": "f22", "Fuel_capacity": 5000.0, "passengers": 2.0 },
+    { "name": "f35", "Fuel_capacity": 3000.0, "passengers": 2.0 },
+    { "name": "messerschmit", "Fuel_capacity": 2500.0, "passengers": 2.0 },
+    { "name": "boing 787", "Fuel_capacity": 15000.0, "passengers": 160.0 },
+    { "name": "An225", "Fuel_capacity": 20000.0, "passengers":  15.0},
+    { "name": "An26", "Fuel_capacity": 1500.0, "passengers": 25.0 },
+    { "name": "l39", "Fuel_capacity": 800.0, "passengers": 2.0 }
 ];
-data.forEach((insect) => {
-    showroomList.push(new Insect(insect.name, insect.velocity, insect.weight));
+data.forEach((plane) => {
+    showroomList.push(new Plane(plane.name, plane.Fuel_capacity, plane.passengers));
 });
 
 const drawList = (list) => {
@@ -32,8 +32,8 @@ const drawList = (list) => {
             <div id="showroom-${idx}" class="w-40 bg-slate-200 p-2 rounded-[12px] mr-3 mt-5 h-[130px] text-center shadow-xl">
                 <p class="text-lg">${el.name}</p>
                 <ul>
-                    <li class="text-slate-500 text-sm">velocity: ${el.velocity}</li>
-                    <li class="text-slate-500 text-sm">weight: ${el.weight}</li>
+                    <li class="text-slate-500 text-sm">Fuel capacity: ${el.Fuel_capacity}</li>
+                    <li class="text-slate-500 text-sm">passengers: ${el.passengers}</li>
                 </ul>
                 <button class="mt-2 p w-24 border border-red-500 rounded-full text-red-500 hover:bg-red-500 hover:text-white transition-all" onClick="deleteCard('showroom-${idx}')">delete</button>
             </div>
@@ -59,17 +59,16 @@ const deleteCard = (cardId) => {
 }
 
 const sortCheckbox = (checkbox) => {
-    // const checkbox = document.getElementById('vel-sort-checkbox');
     if (checkbox.checked) {
         currentList = [...showroomList];
         showroomList.length = 0;
         showroomList.push(...currentList);
 
         currentList.sort((a, b) => {
-            if (a.velocity < b.velocity) {
+            if (a.Fuel_capacity < b.Fuel_capacity) {
                 return 1;
             }
-            else if (a.velocity > b.velocity) {
+            else if (a.Fuel_capacity > b.Fuel_capacity) {
                 return -1;
             }
             return 0;
@@ -80,9 +79,9 @@ const sortCheckbox = (checkbox) => {
     }
 }
 
-const alertAverageVelocity = () => {
-    const average = showroomList.reduce((accumulator, currentInsect, index, array) => {
-        accumulator += currentInsect.velocity;
+const alertAverageCapasity = () => {
+    const average = showroomList.reduce((accumulator, currentPlane, index, array) => {
+        accumulator += currentPlane.Fuel_capacity;
         if (index === array.length - 1) {
             return accumulator / showroomList.length;
         }
