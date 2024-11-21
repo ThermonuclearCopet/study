@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/user/projects_git/study/num_methods",
-      "program": "/Users/user/projects_git/study/num_methods/build/Debug/outDebug"
+      "cwd": "/Users/user/projects_git/study/ap-main/lab_8",
+      "program": "/Users/user/projects_git/study/ap-main/lab_8/build/Debug/outDebug"
     }
   ]
 }

@@ -5,7 +5,8 @@
   }
   
   .hero__heading {
-    margin-top: 20px;
+    margin-top: 150px;
+    margin-inline: auto;
     width: 356px;
     font-family: "Playfair Display";
     font-size: 64px;
@@ -62,7 +63,22 @@
     background-size: 0.65rem auto;
   }
   
-  .hero__button{
+  @keyframes buttonPulse {
+    0% {
+      transform: scale(1);
+      background-color: #FB8F1D;
+    }
+    50% {
+      transform: scale(1.05);
+      background-color: #ff9500;
+    }
+    100% {
+      transform: scale(1);
+      background-color: #FB8F1D;
+    }
+  }
+  
+  .hero__button {
     width: 180px;
     height: 45px;
     background: #FB8F1D;
@@ -71,4 +87,52 @@
     font-weight: 500;
     font-size: 15px;
     margin-top: 30px;
+    cursor: pointer;
+    animation: buttonPulse 2s infinite ease-in-out;
+  }
+  
+
+  @media screen and (max-width: 768px){
+    .hero__container {
+      margin: 0, auto;
+  }
+    .hero__inner{
+      margin: 0, auto;
+      width: auto;
+      margin-left: 0px;
+      background-color: #ffffff8d;
+      padding: 20px;
+
+    }
+    hr {
+      display: none;
+    }
+    .hero__sub-title{
+      font-weight: 700;
+      font-size: 35px;
+    }
+    .hero__heading{
+      margin-top: 70px;
+    }
+  }
+
+  @media screen and (max-width: 580px){
+    .form-container{
+      flex-direction: column;
+      margin: 0, auto;
+    }
+    .hero__container{
+      max-width: 580px;
+      height:auto;
+      align-items: center;
+    }
+    .hero__inner{
+      width: 100%;
+      margin: 0, auto;
+      padding: 0px;
+      
+    }
+    .hero__heading{
+      width: auto;
+    }
   }

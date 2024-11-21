@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes Catalog</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input, button { margin: 5px; padding: 5px; }
+        table { border-collapse: collapse; width: 50%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+        #editModal { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        #editModal input { display: block; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Planes Catalog</h1>
+    <form id="planeForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="number" id="fuelCapacity" placeholder="Fuel Capacity" required />
+        <input type="number" id="passangers" placeholder="Passengers" required />
+        <button id="create-new-plane-btn" type="submit">Add Plane</button>
+    </form>
+
+    <h2>List of Planes</h2>
+    <input type="text" id="searchInput" placeholder="Search by name..." />
+    <button id="apply-search-btn">Apply</button>
+    <input type="checkbox" name="" id="sort-checkbox">
+    <label for="">Sort by passengers</label>
+    <button id="average-btn">Count average passengers</button>
+
+    <h2>List of Planes</h2>
+    <table id="planesTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Fuel Capacity</th>
+                <th>Passengers</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="planeList"></tbody>
+    </table>
+
+    <!-- Modal for Editing -->
+    <div id="editModal">
+        <h3>Edit Plane</h3>
+        <input type="text" id="editName" placeholder="Name" />
+        <input type="number" id="editFuelCapacity" placeholder="Fuel Capacity" />
+        <input type="number" id="editPassangers" placeholder="Passengers" />
+        <button id="saveEditBtn">Save</button>
+        <button id="closeModalBtn">Cancel</button>
+    </div>
+
+    <script defer src="app.js"></script>
+</body>
+</html>

@@ -1,66 +1,203 @@
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  background-color: white;
+}
+
+.header__menu {
+  display: none;
+  width: 32px;
+  cursor: pointer;
+}
+
+.header__menu > img {
+  max-width: 100%;
+}
+
+.header__menu-icon {
+  width: 40px;
+}
+
+
+
+.header__nav ul {
+  display: flex;
+  margin-right: 80px;
+}
+
+
+.header {
+  margin-bottom: 80px;
+}
+
+.header__image {
+  margin-left: 100px;
+}
+
+
+
+.header__nav-item {
+  font-size: 16px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+
+.header__nav-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.header__nav-item-black {
+  font-size: 16px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  font-weight: 500;
+}
+
+.header__nav-item-black:not(:last-child) {
+  margin-right: 60px;
+}
+
+
+.header__login {
+  width: 132px;
+  height: 45px;
+  background: #fff;
+  border-radius: 6px;
+  color: #FB8F1D;
+  font-weight: 500;
+  font-size: 15px;
+  border: 2px solid #FB8F1D;
+}
+
+
+.header__register {
+  width: 132px;
+  height: 45px;
+  background: #FB8F1D;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+@keyframes buttonHover {
+  0% {
+    font-size: 16px;
+    transform: scale(1);
   }
-  
-  .header__nav ul {
-    display: flex;
-    margin-right: 80px;
+  50% {
+    font-size: 18px;
+    transform: scale(1.05);
+  }
+  100% {
+    font-size: 16px;
+    transform: scale(1);
+  }
+}
+
+.header__nav-item-black a:hover {
+  animation: buttonHover 0.5s forwards;
+}
+.header__nav-item a:hover {
+  animation: buttonHover 0.5s forwards;
+}
+
+@media screen and (max-width: 1100px) {
+  .header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    background-color: white;
+    z-index: 10;
   }
 
-  
-  .header {
-    height: 786px;
-    margin-bottom: 175px;
+  .header__menu {
+    display: block;
   }
-  
+
+  .header__login .header__register{
+    display: none;
+  }
+
+  .header__nav {
+    background: #F8F8F8;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 0;
+    clip-path: circle(0 at top left);
+    transition: clip-path 0.9s ease-in;
+  }
+
+  .header__nav.open {
+    clip-path: circle(1000px at top);
+  }
+
+  .header__nav ul {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .header__nav .header__nav-item .header__nav-item-black {
+    margin-right: 0;
+    padding-top: 10vh;
+  }
+
+  .header__nav a {
+    font-weight: 500;
+    display: block;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0, auto;
+  }
+
+  .header__menu {
+    display: block;
+    margin-right: 10px;
+  }
+
   .header__image {
-    margin-left: 100px;
+    width: 40px;
+    height: auto;
   }
-  
-  
-  
-  .header__nav-item {
-    font-size: 16px;
-    margin-right: 40px;
+
+  .header__nav ul {
+    display: none;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .header__nav.open ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 400;
+    background-color: #f8f8f8;
   }
-  
+
+  .header__nav-item,
   .header__nav-item-black {
-    font-size: 16px;
-    margin-right: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:black;
-    font-weight: 500;
+    margin: 10px 0;
+    font-size: 18px;
   }
-  
-  
-  .header__login {
-    width: 132px;
-    height: 45px;
-    background: #fff;
-    border-radius: 6px;
-    color: #FB8F1D;
-    font-weight: 500;
-    font-size: 15px;
-    border: 2px solid #FB8F1D;
-  }
-  
-  
-  .header__register {
-    width: 132px;
-    height: 45px;
-    background: #FB8F1D;
-    border-radius: 6px;
-    color: #fff;
-    font-weight: 500;
-    font-size: 15px;
-  }
-  
+}

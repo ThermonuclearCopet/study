@@ -1,0 +1,95 @@
+/* Загальний стиль для всього додатка */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0d0d;
+    color: #eaeaea;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #90e0ef;
+  }
+  
+  /* Стилі для HeroSection */
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-section {
+      flex-direction: row;
+      gap: 60px;
+    }
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 10px;
+    object-fit: cover; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .hero-image:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-content {
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-content {
+      text-align: left;
+    }
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #4db8ff;
+    margin-bottom: 16px;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+  
+  .hero-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0077b6;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-button:hover {
+    background-color: #0096c7;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+  }
+  

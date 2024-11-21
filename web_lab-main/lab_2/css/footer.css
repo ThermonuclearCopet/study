@@ -22,10 +22,12 @@
     background: #cdd1d4;
     align-items: center;
     height: 1px;
-    width: 1219px;
+    width: auto;
     border: 0;
   }
   
+
+
   .footer__social {
     display: flex;
     align-items: last baseline;
@@ -37,5 +39,42 @@
     margin-left: 35px;
     margin-top: 30px;
   
+  }
+
+  @media screen and (max-width:1024px){
+    .footer__hr {
+      width: auto;
+      margin: 0, auto;
+    }
+    .footer{
+      align-items: center;
+      margin: 0, auto;
+      padding: 0;
+    }
+    .footer__branding{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+    }
+  }
+
+  @media screen and (max-width:450px){
+    .footer{
+      max-width: 450px;
+      padding: 10px;
+      align-items: center;
+      flex-direction: column;
+      font-size: small;
+    }
+    .footer__hr {
+      width: auto;
+      margin: 0, auto;
+    }
+    
+    .footer__branding{
+      align-self: center;
+    }
+    
   }
   

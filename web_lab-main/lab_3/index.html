@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plane Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Add New plane</h2>
+            <input id="name-input" type="text" placeholder="Name">
+            <input id="fuel_capacity-input" type="text" placeholder="Fuel_capacity">
+            <input id="passengers-input" type="text" placeholder="passengers">
+            <button onclick="addPlane()">Add plane</button>
+            
+            <h3>Search</h3>
+            <input id="search-input" type="text" placeholder="Search plane...">
+            <button onclick="searchCard()">Search</button>
+            
+            <h3>Controls</h3>
+            <div>
+                <label class="sort_option">
+                    <input id="vel-sort-checkbox" type="checkbox" onchange="sortCheckbox(this)">
+                    <p>Sort by fuel capacity</p>
+                </label>
+            </div>
+            <button onclick="alertAverageCapasity()">Average capacity</button>
+            <button onclick="clearSearch()">Clear Search</button>
+        </div>
+        <div class="right-panel">
+            <h2>Plane info</h2>
+            <div id="showroom"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
