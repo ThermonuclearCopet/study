@@ -1,0 +1,19 @@
+.cart-page-section {
+    padding: 8px;
+    background-color: #130831;
+}
+
+.cart-page-title {
+    text-align: center;
+    color: white;
+}
+
+.cart-page-item {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 37%);
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+}

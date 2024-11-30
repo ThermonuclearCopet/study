@@ -1,0 +1,38 @@
+.single-aircraft-page {
+    display: flex;
+    gap: 40px;
+    padding: 60px;
+    background-color: #130831;
+}
+
+.single-aircraft-image {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.single-aircraft-desc {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: start;
+}
+
+.single-aircraft-title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.single-aircraft-cart-button {
+    padding: 8px;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition-duration: 200ms;
+}
+
+.single-aircraft-cart-button:hover {
+    background: black;
+    color: white;
+}

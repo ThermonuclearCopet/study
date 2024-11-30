@@ -5,7 +5,6 @@
 
 using namespace std;
 
-// Функція для заповнення квадратної матриці випадковими числами
 void fillMatrix(int** matrix, int size, int minVal, int maxVal) {
     srand(time(nullptr));
     for (int i = 0; i < size; ++i) {
@@ -15,9 +14,8 @@ void fillMatrix(int** matrix, int size, int minVal, int maxVal) {
     }
 }
 
-// Функція для обчислення сум на всіх діагоналях
 void calculateDiagonalSums(int** matrix, int size, int* diagonalSums) {
-    int center = size - 1; // Індекс головної діагоналі у масиві diagonalSums
+    int center = size - 1;
 
     for (int i = 0; i < size; ++i) {
         for (int j = 0; j < size; ++j) {
@@ -26,7 +24,6 @@ void calculateDiagonalSums(int** matrix, int size, int* diagonalSums) {
     }
 }
 
-// Функція для пошуку мінімальної суми
 int findMinSum(int* sums, int size) {
     int minSum = INT_MAX;
     for (int i = 0; i < size; ++i) {
@@ -37,7 +34,7 @@ int findMinSum(int* sums, int size) {
     return minSum;
 }
 
-// Функція для пошуку максимальної суми
+
 int findMaxSum(int* sums, int size) {
     int maxSum = INT_MIN;
     for (int i = 0; i < size; ++i) {
@@ -48,7 +45,7 @@ int findMaxSum(int* sums, int size) {
     return maxSum;
 }
 
-// Функція для виведення квадратної матриці
+
 void printMatrix(int** matrix, int size) {
     for (int i = 0; i < size; ++i) {
         for (int j = 0; j < size; ++j) {
@@ -58,7 +55,7 @@ void printMatrix(int** matrix, int size) {
     }
 }
 
-// Функція для виведення одновимірного масиву
+
 void printArray(int* array, int size) {
     for (int i = 0; i < size; ++i) {
         cout << array[i] << " ";
@@ -71,17 +68,14 @@ int main() {
     cout << "Введіть розмір квадратної матриці: ";
     cin >> size;
 
-    // Виділення пам'яті для матриці
     int** matrix = new int*[size];
     for (int i = 0; i < size; ++i) {
         matrix[i] = new int[size];
     }
 
-    // Виділення пам'яті для масиву сум діагоналей
     int diagonalCount = 2 * size - 1;
     int* diagonalSums = new int[diagonalCount]();
 
-    // Заповнення та обробка матриці
     fillMatrix(matrix, size, -20, 20);
 
     cout << "Заповнена матриця:\n";
@@ -98,7 +92,6 @@ int main() {
     cout << "\nНайменша сума: " << minSum << endl;
     cout << "Найбільша сума: " << maxSum << endl;
 
-    // Звільнення пам'яті
     for (int i = 0; i < size; ++i) {
         delete[] matrix[i];
     }

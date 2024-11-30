@@ -1,0 +1,1 @@
+SELECT CalculateAverageTotalAmount() AS Average;

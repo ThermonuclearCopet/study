@@ -1,0 +1,22 @@
+.counter {
+    display: flex;
+    border-radius: 20%;
+    border: 1px solid #7f7b7b;
+    align-items: center;
+    padding: 10px;
+}
+
+.counter-btn {
+    height: fit-content;
+    background: none;
+    border-radius: 20%;
+    border: none;
+    transition-duration: 200ms;
+}
+.counter-btn:hover {
+    background-color: #d2cccc;
+}
+
+.counter-btn-img {
+    width: 12px;
+}
